@@ -1,0 +1,44 @@
+@import '../../styles/mixins';
+
+.contact-hero {
+
+    &__inner {
+        @include flex-center;
+        position: relative;
+        height: 50vh;
+        overflow: hidden;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__image {
+        max-width: 230px;
+        position: absolute;
+        bottom: 0;
+        border-radius: var(--border-radius);
+
+        @media (max-width: 750px) {
+            max-width: 180px;
+        }
+
+        &-left {
+            z-index: -2;
+            max-width: 300px;
+
+            @media (max-width: 750px) {
+                max-width: 200px;
+            }
+        }
+    }
+
+    &__line {
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: var(--color-grey);
+    }
+}

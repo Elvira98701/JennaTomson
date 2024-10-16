@@ -1,0 +1,15 @@
+@import '../../styles/mixins';
+
+.header {
+    position: absolute;
+    width: 100%;
+    background-color: var(--color-dark);
+    z-index: 1001;
+
+
+    &__inner {
+        height: var(--header-height);
+        @include flex-center;
+
+    }
+}

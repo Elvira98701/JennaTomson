@@ -1,0 +1,90 @@
+@import '../../styles/mixins';
+
+.slider {
+    height: 75vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        transition: all 0.5s ease-in;
+    }
+
+    &__slide {
+        min-width: calc(100% / 4);
+        border-radius: var(--border-radius);
+        border: 20px solid var(--color-dark);
+
+        @media (max-width: 1400px) {
+            min-width: calc(100% / 3);
+        }
+
+        @media (max-width: 950px) {
+            min-width: calc(100% / 2);
+        }
+
+        @media (max-width: 600px) {
+            min-width: 100%;
+        }
+    }
+
+    &__image {
+        border-radius: var(--border-radius);
+        height: clamp(28.875rem, 27.45rem + 7.12vw, 36rem);
+        -o-object-fit: cover;
+        object-fit: cover;
+        transition: all 0.3s ease;
+    }
+
+    &__next,
+    &__prev {
+        @include square(70px);
+        position: absolute;
+        border-radius: 50%;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        z-index: 4;
+        transition: scale 0.5s;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(5px);
+
+        &:disabled {
+            background-color: var(--color-grey);
+        }
+
+        &:active {
+            scale: 0.8;
+        }
+    }
+
+    &__next {
+        background: rgb(255 255 255 / 0.1) url('../../assets/icons/arrow-right.svg') center / 40% no-repeat;
+        left: calc(100% / 4);
+
+        @media (max-width: 1400px) {
+            left: calc(100% / 3);
+        }
+
+        @media (max-width: 950px) {
+            left: calc(100% / 2);
+        }
+
+        @media (max-width: 600px) {
+            right: 0;
+            left: auto;
+        }
+    }
+
+    &__prev {
+        background: rgb(255 255 255 / 0.1) url('../../assets/icons/arrow-left.svg') center / 40% no-repeat;
+        left: 0;
+    }
+}

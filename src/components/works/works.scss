@@ -1,0 +1,16 @@
+@import '../../styles/mixins';
+
+.works {
+    padding-bottom: var(--section-padding-block);
+
+    &__list {
+        @include flex-center;
+        flex-direction: column;
+        row-gap: clamp(1.875rem, 1.313rem + 2.81vw, 4.688rem);
+    }
+
+    &__button-wrapper {
+        margin-top: clamp(1.875rem, 1.313rem + 2.81vw, 4.688rem);
+        text-align: center;
+    }
+}

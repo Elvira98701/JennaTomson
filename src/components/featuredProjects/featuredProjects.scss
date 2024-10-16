@@ -1,0 +1,17 @@
+@import '../../styles/mixins';
+
+.featured-projects {
+    padding-bottom: var(--section-padding-block);
+
+    &__title {
+        @include flex-center;
+        height: 60vh;
+        text-align: center
+    }
+
+    &__list {
+        @include flex-center;
+        flex-direction: column;
+        row-gap: 75px;
+    }
+}
