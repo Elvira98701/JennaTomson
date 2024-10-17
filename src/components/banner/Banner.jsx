@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
+import Modal from "../modal/Modal";
+
 import HERO from "../../assets/images/hero.jpg";
 import "./banner.scss";
-import Modal from "../modal/Modal";
 
 const Banner = () => {
   return (

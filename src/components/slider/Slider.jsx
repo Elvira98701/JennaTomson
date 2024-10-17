@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import { FEEDBACKS } from "../../helpers/constants";
-import "./slider.scss";
 import { AnimatePresence, motion } from "framer-motion";
+import { FEEDBACKS } from "../../helpers/constants";
+
+import "./slider.scss";
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

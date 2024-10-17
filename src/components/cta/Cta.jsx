@@ -1,5 +1,5 @@
-import Button from "../button/Button";
 import { motion } from "framer-motion";
+import Button from "../button/Button";
 
 import GIRL from "../../assets/images/girl.jpg";
 import "./cta.scss";

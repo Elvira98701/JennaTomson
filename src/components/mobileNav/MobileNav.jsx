@@ -1,13 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { MENU } from "../../helpers/constants";
 import Logo from "../logo/Logo";
 
 import "./mobile-nav.scss";
-import { AnimatePresence, motion } from "framer-motion";
-import { MENU } from "../../helpers/constants";
-import { Link } from "react-router-dom";
 
 const MobileNav = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
+
+  useEffect(() => {
+    if (isOpenMenu) {
+      document.documentElement.classList.add("popup-opened");
+    } else {
+      document.documentElement.classList.remove("popup-opened");
+    }
+  }, [isOpenMenu]);
 
   return (
     <div className="mobile">

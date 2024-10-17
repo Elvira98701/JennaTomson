@@ -11,7 +11,7 @@ const FeaturedProjects = () => {
         <motion.h1
           className="featured-projects__title"
           initial={{ y: 200, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
+          animate={{ y: 0, opacity: 1 }}
           transition={{
             type: "spring",
             bounce: 0.8,

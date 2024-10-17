@@ -6,7 +6,7 @@
     height: 100vh;
     background-color: var(--color-dark);
     transform-origin: bottom;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .slide-out {
@@ -17,5 +17,5 @@
     height: 100vh;
     background-color: var(--color-primary);
     transform-origin: top;
-    z-index: 1000;
+    z-index: 100;
 }

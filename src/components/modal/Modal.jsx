@@ -4,39 +4,39 @@ import { useEffect, useState } from "react";
 import "./modal.scss";
 
 const Modal = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenModal, setIsOpenModal] = useState(false);
 
   useEffect(() => {
-    if (isOpen) {
+    if (isOpenModal) {
       document.documentElement.classList.add("popup-opened");
     } else {
       document.documentElement.classList.remove("popup-opened");
     }
-  }, [isOpen]);
+  }, [isOpenModal]);
 
   return (
     <div className="modal">
       <button
-        onClick={() => setIsOpen(true)}
+        onClick={() => setIsOpenModal(true)}
         className="modal__button"
         type="button"
       >
         Subscribe
       </button>
-      <ModalContent isOpen={isOpen} setIsOpen={setIsOpen} />
+      <ModalContent isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal} />
     </div>
   );
 };
 
-const ModalContent = ({ isOpen, setIsOpen }) => {
+const ModalContent = ({ isOpenModal, setIsOpenModal }) => {
   return (
     <AnimatePresence>
-      {isOpen && (
+      {isOpenModal && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          onClick={() => setIsOpen(false)}
+          onClick={() => setIsOpenModal(false)}
           className="modal__wrapper"
         >
           <motion.div
@@ -69,7 +69,7 @@ const ModalContent = ({ isOpen, setIsOpen }) => {
               </form>
               <div className="flex gap-2">
                 <button
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => setIsOpenModal(false)}
                   className="modal__button-close"
                 ></button>
               </div>

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+
 import "./aboutBanner.scss";
 import HERO from "../../assets/images/hero.jpg";
 

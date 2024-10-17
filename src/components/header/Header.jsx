@@ -1,32 +1,32 @@
 import { useEffect, useState } from "react";
 import Nav from "../nav/Nav";
-
-import "./header.scss";
 import MobileNav from "../mobileNav/MobileNav";
 
-const Header = () => {
-  const [isMobile, setIsMobile] = useState(false);
+import "./header.scss";
 
-  const updateMobile = () => {
+const Header = () => {
+  const [isMobileView, setIsMobileView] = useState(false);
+
+  const checkMobileView = () => {
     if (window.innerWidth <= 750) {
-      setIsMobile(true);
+      setIsMobileView(true);
     } else {
-      setIsMobile(false);
+      setIsMobileView(false);
     }
   };
 
   useEffect(() => {
-    updateMobile();
-    window.addEventListener("resize", updateMobile);
+    checkMobileView();
+    window.addEventListener("resize", checkMobileView);
     return () => {
-      window.removeEventListener("resize", updateMobile);
+      window.removeEventListener("resize", checkMobileView);
     };
   }, []);
 
   return (
     <header className="header">
       <div className="header__inner container">
-        {isMobile ? <MobileNav /> : <Nav />}
+        {isMobileView ? <MobileNav /> : <Nav />}
       </div>
     </header>
   );
