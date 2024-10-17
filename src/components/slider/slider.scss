@@ -86,7 +86,7 @@
     }
 
     &__next {
-        background: rgb(255 255 255 / 0.1) url('../../assets/icons/arrow-right.svg') center / 40% no-repeat;
+        background: rgb(0 0 0 / 0.4) url('../../assets/icons/arrow-right.svg') center / 40% no-repeat;
         left: calc(100% / 4);
 
         @media (max-width: 1400px) {
@@ -104,7 +104,7 @@
     }
 
     &__prev {
-        background: rgb(255 255 255 / 0.1) url('../../assets/icons/arrow-left.svg') center / 40% no-repeat;
+        background: rgb(0 0 0 / 0.4) url('../../assets/icons/arrow-left.svg') center / 40% no-repeat;
         left: 0;
     }
 }

@@ -17,6 +17,16 @@ const MobileNav = () => {
     }
   }, [isOpenMenu]);
 
+  const visible = {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5 },
+  };
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible,
+  };
+
   return (
     <div className="mobile">
       <Logo />
@@ -32,9 +42,23 @@ const MobileNav = () => {
             animate={{ scale: 1, rotate: "0deg" }}
             exit={{ scale: 0, rotate: "0deg" }}
           >
-            <ul className="mobile__list">
+            <motion.ul
+              className="mobile__list"
+              initial="hidden"
+              animate="visible"
+              exit={{ opacity: 0, transition: { duration: 1 } }}
+              variants={{
+                visible: {
+                  transition: { staggerChildren: 0.2, delayChildren: 0.3 },
+                },
+              }}
+            >
               {MENU.map(({ id, name, link }) => (
-                <li className="mobile__item" key={id}>
+                <motion.li
+                  className="mobile__item"
+                  key={id}
+                  variants={itemVariants}
+                >
                   <Link
                     className="mobile__link"
                     to={link}
@@ -42,9 +66,9 @@ const MobileNav = () => {
                   >
                     {name}
                   </Link>
-                </li>
+                </motion.li>
               ))}
-            </ul>
+            </motion.ul>
             <button
               className="mobile__close-btn"
               onClick={() => setIsOpenMenu(false)}
