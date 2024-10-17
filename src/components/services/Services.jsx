@@ -54,6 +54,7 @@ const Accordion = ({ i, expanded, setExpanded, title, description, image }) => {
                 bounce: 0.4,
                 duration: 0.7,
               }}
+              loading="lazy"
             />
           )}
         </AnimatePresence>

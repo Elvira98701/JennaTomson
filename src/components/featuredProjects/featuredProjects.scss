@@ -12,6 +12,6 @@
     &__list {
         @include flex-center;
         flex-direction: column;
-        row-gap: 75px;
+        row-gap: clamp(1.875rem, 1.313rem + 2.81vw, 4.688rem);
     }
 }
