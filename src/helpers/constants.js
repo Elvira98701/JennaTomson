@@ -199,42 +199,72 @@ export const FEEDBACKS = [
   {
     id: 0,
     image: feedback1,
+    description:
+      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+    name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 1,
     image: feedback2,
+    description:
+      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+    name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 2,
     image: feedback3,
+    description:
+      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+    name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 3,
     image: feedback4,
+    description:
+      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+    name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 4,
     image: feedback5,
+    description:
+      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+    name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 5,
     image: feedback6,
+    description:
+      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+    name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 6,
     image: feedback7,
+    description:
+      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+    name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 7,
     image: feedback8,
+    description:
+      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+    name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 8,
     image: feedback9,
+    description:
+      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+    name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 9,
     image: feedback10,
+    description:
+      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+    name: "Alex Johnson, CEO of TechWave",
   },
 ];
 

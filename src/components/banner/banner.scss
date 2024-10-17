@@ -63,18 +63,6 @@
         }
     }
 
-    &__icon {
-        width: 50px;
-        position: absolute;
-        right: 0;
-        bottom: 30px;
-        z-index: 1;
-
-        @media (max-width: 750px) {
-            bottom: 0px;
-        }
-    }
-
     &__subtitle {
         text-transform: uppercase;
         transform: translateX(-200px);

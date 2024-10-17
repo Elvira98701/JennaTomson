@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
-
 import HERO from "../../assets/images/hero.jpg";
-import ARROW from "../../assets/icons/arrow-down-right.svg";
-
 import "./banner.scss";
+import Modal from "../modal/Modal";
 
 const Banner = () => {
   return (
@@ -14,7 +12,6 @@ const Banner = () => {
             <div className="banner__heading-container">
               <h1 className="banner__title">Product</h1>
             </div>
-            <img className="banner__icon" src={ARROW} alt="arrow" />
           </div>
           <div className="banner__col-2">
             <motion.img
@@ -63,6 +60,7 @@ const Banner = () => {
           />
           <div className="banner__circle"></div>
           <div className="banner__circle banner__circle_bottom"></div>
+          <Modal />
         </div>
       </div>
     </section>

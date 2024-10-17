@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { FEEDBACKS } from "../../helpers/constants";
 import "./slider.scss";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -70,7 +71,7 @@ const Slider = () => {
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
-        {FEEDBACKS.map(({ id, image }, index) => (
+        {FEEDBACKS.map(({ id, image, description, name }, index) => (
           <article className="slider__slide" key={id}>
             <img
               className="slider__image"
@@ -81,6 +82,19 @@ const Slider = () => {
                 transform: currentIndex === index ? "scale(1.1)" : "scale(1)",
               }}
             />
+            <AnimatePresence>
+              {currentIndex === index && (
+                <motion.div
+                  className="slider__content"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                >
+                  <p className="slider__description">{description}</p>
+                  <span className="slider__author">{name}</span>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </article>
         ))}
       </div>

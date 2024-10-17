@@ -3,7 +3,7 @@ const FromSection = () => {
   return (
     <section className="form-section">
       <div className="form-section__inner container">
-        <form className="form-section__form" action="">
+        <form className="form-section__form">
           <input
             className="form-section__input"
             type="email"
