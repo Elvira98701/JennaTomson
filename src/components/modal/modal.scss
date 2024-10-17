@@ -27,6 +27,7 @@
             transform: translateX(-50%);
             @include square(100px);
             font-size: 12px;
+            letter-spacing: 0.15em;
         }
 
         &-close {
@@ -43,6 +44,7 @@
 
             &:hover {
                 background-color: var(--color-grey);
+                transform: rotate(135deg);
             }
         }
     }
