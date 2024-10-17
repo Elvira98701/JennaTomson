@@ -200,70 +200,70 @@ export const FEEDBACKS = [
     id: 0,
     image: feedback1,
     description:
-      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+      "Working with Jenna is always a pleasure. Her attention to detail and ability to understand our needs make her a valuable member of our team. Our products have become more intuitive thanks to her design!",
     name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 1,
     image: feedback2,
     description:
-      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+      "Jenna is an incredible designer who is always ready to support her colleagues. She brings fresh ideas and inspiration to every project. Working with her is a real privilege!",
     name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 2,
     image: feedback3,
     description:
-      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+      "I'm impressed with Jenna's creativity. She always offers non-standard solutions and knows how to look at a problem from an unexpected angle. Her approach to design is inspiring!",
     name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 3,
     image: feedback4,
     description:
-      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+      "Jenna shows a high level of professionalism in her work. She always meets deadlines and offers solutions that meet business goals. The results of her work speak for themselves!",
     name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 4,
     image: feedback5,
     description:
-      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+      "I have worked with Jenna on several projects, and at each stage she has shown her ability to cope with pressure and adhere to high quality standards. Great designer!",
     name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 5,
     image: feedback6,
     description:
-      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+      "Jenna works great as a team member. She knows how to create a comfortable atmosphere for discussing ideas and actively participates in team meetings. Her contribution is always valuable",
     name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 6,
     image: feedback7,
     description:
-      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+      "The user experience in our apps has improved significantly thanks to Jenna. Her research and testing helped to identify important aspects that had previously been ignored.",
     name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 7,
     image: feedback8,
     description:
-      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+      "Jenna is a designer who doesn't stop there. She is constantly learning and following new trends in design, which makes her work relevant and in demand.",
     name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 8,
     image: feedback9,
     description:
-      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+      "Jenna gets along great with clients. She knows how to listen to their demands and adapt her ideas to meet their expectations. The results of her work are always impressive!",
     name: "Alex Johnson, CEO of TechWave",
   },
   {
     id: 9,
     image: feedback10,
     description:
-      "Took our abstract ideas and turned them into a tangible, market-ready product. Their attention to detail and innovative approach were evident in every step of the process. We&rsquo;re thrilled with the results.",
+      "Jenna and I completed several difficult projects, and each time I admired her ability to cope with challenges. She always finds time for feedback and provides great interaction!",
     name: "Alex Johnson, CEO of TechWave",
   },
 ];

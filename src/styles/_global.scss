@@ -37,19 +37,16 @@ h6 {
 }
 
 h1 {
-    font-size: 200px;
     text-transform: uppercase;
     font-size: clamp(4.375rem, 2.75rem + 8.13vw, 12.5rem);
 }
 
 h2 {
-    font-size: 150px;
     text-transform: uppercase;
     font-size: clamp(3.125rem, 1.875rem + 6.25vw, 9.375rem);
 }
 
 h3 {
-    font-size: 50px;
     font-size: clamp(1.563rem, 1.25rem + 1.56vw, 3.125rem);
 }
 
