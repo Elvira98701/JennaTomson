@@ -1,3 +1,4 @@
+import MetricCounter from "../metricCounter/MetricCounter";
 import "./metrics.scss";
 
 const Metrics = () => {
@@ -9,21 +10,25 @@ const Metrics = () => {
         </h2>
         <ul className="metrics__list">
           <li className="metrics__item">
-            <span className="metrics__count">150+</span>
+            <p className="metrics__count">
+              <MetricCounter from={1} to={150} />+
+            </p>
             <span>Projects Completed</span>
           </li>
           <li className="metrics__item">
-            <span className="metrics__count metrics__count_accent">
-              200,000+
-            </span>
+            <p className="metrics__count metrics__count_accent">200,000+</p>
             <span>Units Sold</span>
           </li>
           <li className="metrics__item">
-            <span className="metrics__count">10+</span>
+            <p className="metrics__count">
+              <MetricCounter from={1} to={10} />+
+            </p>
             <span>Years of Experience</span>
           </li>
           <li className="metrics__item">
-            <span className="metrics__count">50 days</span>
+            <p className="metrics__count">
+              <MetricCounter from={1} to={50} /> days
+            </p>
             <span>Average time to finish project</span>
           </li>
         </ul>
