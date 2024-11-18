@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import { MENU } from "../../helpers/constants";
-import Logo from "../logo/Logo";
 import { Fragment } from "react";
 import { motion } from "framer-motion";
+import { MENU } from "../../helpers/constants";
+import Logo from "../logo/Logo";
 
 import "./nav.scss";
 

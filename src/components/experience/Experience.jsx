@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { PROJECTS } from "../../helpers/constants";
+
 import "./experience.scss";
 
 const Experience = () => {

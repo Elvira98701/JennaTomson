@@ -1,6 +1,6 @@
+import { motion } from "framer-motion";
 import { PROJECTS } from "../../helpers/constants";
 import Work from "../work/Work";
-import { motion } from "framer-motion";
 
 import "./featuredProjects.scss";
 

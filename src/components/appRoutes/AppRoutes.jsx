@@ -4,6 +4,7 @@ import Home from "../../pages/Home/Home";
 import Projects from "../../pages/Projects/Projects";
 import About from "../../pages/About/About";
 import Contact from "../../pages/Contact/Contact";
+import Project from "../../pages/Project/Project";
 
 const AppRoutes = () => {
   return (
@@ -11,6 +12,7 @@ const AppRoutes = () => {
       <Routes>
         <Route index element={<Home />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/project/:id" element={<Project />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
+
 import "./pageTransition.scss";
+
 const PageTransition = () => (
   <>
     <motion.div

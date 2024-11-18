@@ -1,4 +1,5 @@
 import "./formSection.scss";
+
 const FromSection = () => {
   return (
     <section className="form-section">

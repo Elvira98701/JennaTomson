@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import Logo from "../logo/Logo";
+import { MENU, SOCIALS } from "../../helpers/constants";
 
 import "./footer.scss";
-import { MENU, SOCIALS } from "../../helpers/constants";
 
 const Footer = () => {
   return (

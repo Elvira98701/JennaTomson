@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Slider from "../slider/Slider";
+
 import "./feedbacks.scss";
 
 const Feedbacks = () => {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
 import { SERVICES } from "../../helpers/constants";
+
 import PLUS from "../../assets/icons/plus.svg";
 import "./services.scss";
 

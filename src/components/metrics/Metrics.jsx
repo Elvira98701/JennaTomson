@@ -1,4 +1,5 @@
 import MetricCounter from "../metricCounter/MetricCounter";
+
 import "./metrics.scss";
 
 const Metrics = () => {

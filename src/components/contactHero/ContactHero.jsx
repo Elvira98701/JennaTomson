@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 
 import HERO from "../../assets/images/hero.jpg";
 import GIRL2 from "../../assets/images/girl2.jpg";
-
 import "./contactHero.scss";
 
 const ContactHero = () => {

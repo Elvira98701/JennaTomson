@@ -1,4 +1,5 @@
 import { LOGOS } from "../../helpers/constants";
+
 import "./partners.scss";
 
 const Partners = () => {
