@@ -1,5 +1,5 @@
 import ContactHero from "../../components/contactHero/ContactHero";
-import FromSection from "../../components/formSection/FromSection";
+import FormSection from "../../components/formSection/FormSection";
 import PageTransition from "../../components/pageTransition/PageTransition";
 
 const Contact = () => {
@@ -7,7 +7,7 @@ const Contact = () => {
     <main>
       <PageTransition />
       <ContactHero />
-      <FromSection />
+      <FormSection />
     </main>
   );
 };

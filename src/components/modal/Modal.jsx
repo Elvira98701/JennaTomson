@@ -71,6 +71,7 @@ const ModalContent = ({ isOpenModal, setIsOpenModal }) => {
                 <button
                   onClick={() => setIsOpenModal(false)}
                   className="modal__button-close"
+                  type="button"
                 ></button>
               </div>
             </div>

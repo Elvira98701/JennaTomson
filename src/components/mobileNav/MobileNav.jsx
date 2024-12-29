@@ -33,6 +33,7 @@ const MobileNav = () => {
       <button
         className="mobile__open-btn"
         onClick={() => setIsOpenMenu(true)}
+        type="button"
       ></button>
       <AnimatePresence>
         {isOpenMenu && (
@@ -72,6 +73,7 @@ const MobileNav = () => {
             <button
               className="mobile__close-btn"
               onClick={() => setIsOpenMenu(false)}
+              type="button"
             ></button>
           </motion.nav>
         )}

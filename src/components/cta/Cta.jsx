@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Button from "../button/Button";
+import ButtonLink from "../buttonLink/ButtonLink";
 
 import GIRL from "../../assets/images/girl.jpg";
 import "./cta.scss";
@@ -25,7 +25,7 @@ const Cta = () => {
           Get in touch
         </motion.h2>
         <img src={GIRL} alt="girl" className="cta__image" loading="lazy" />
-        <Button link="/contact">Let&apos;s go</Button>
+        <ButtonLink link="/contact">Let&apos;s go</ButtonLink>
       </div>
     </section>
   );

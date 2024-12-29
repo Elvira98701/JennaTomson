@@ -1,6 +1,6 @@
 import "./formSection.scss";
 
-const FromSection = () => {
+const FormSection = () => {
   return (
     <section className="form-section">
       <div className="form-section__inner container">
@@ -35,4 +35,4 @@ const FromSection = () => {
   );
 };
 
-export default FromSection;
+export default FormSection;

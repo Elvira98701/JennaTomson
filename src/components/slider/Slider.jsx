@@ -103,10 +103,12 @@ const Slider = () => {
       <button
         className="slider__prev"
         onClick={() => changeSlide(currentIndex - 1)}
+        type="button"
       ></button>
       <button
         className="slider__next"
         onClick={() => changeSlide(currentIndex + 1)}
+        type="button"
       ></button>
     </div>
   );

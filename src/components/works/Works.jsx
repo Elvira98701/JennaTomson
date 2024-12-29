@@ -1,5 +1,5 @@
 import { PROJECTS } from "../../helpers/constants";
-import Button from "../button/Button";
+import ButtonLink from "../buttonLink/ButtonLink";
 import Work from "../work/Work";
 
 import "./works.scss";
@@ -15,7 +15,7 @@ const Works = () => {
           ))}
         </div>
         <div className="works__button-wrapper">
-          <Button link="/projects">See all projects</Button>
+          <ButtonLink link="/projects">See all projects</ButtonLink>
         </div>
       </div>
     </section>
