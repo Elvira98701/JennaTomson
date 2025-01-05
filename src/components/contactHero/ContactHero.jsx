@@ -10,15 +10,10 @@ const ContactHero = () => {
       <div className="contact-hero__inner container">
         <motion.h1
           className="contact-hero__title"
-          initial={{ y: 200, opacity: 0 }}
+          initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{
-            type: "spring",
-            bounce: 0.8,
-            duration: 1.5,
-            damping: 3,
-            stiffness: 50,
-            restDelta: 0.001,
+            duration: 0.5,
             delay: 1.5,
           }}
         >

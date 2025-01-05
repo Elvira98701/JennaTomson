@@ -10,16 +10,11 @@ const Cta = () => {
       <div className="cta__inner container">
         <motion.h2
           className="cta__title"
-          initial={{ y: 200, opacity: 0 }}
+          initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{
-            type: "spring",
-            bounce: 0.8,
-            duration: 1.5,
-            damping: 3,
-            stiffness: 50,
-            restDelta: 0.001,
+            duration: 0.5,
           }}
         >
           Get in touch
