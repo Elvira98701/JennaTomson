@@ -1,124 +1,122 @@
 .services {
-    padding-block: var(--section-padding-block);
+  padding-block: var(--section-padding-block);
+  overflow: hidden;
+
+  &__title {
+    position: relative;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: clamp(3.125rem, 0.75rem + 11.88vw, 15rem);
+    text-transform: uppercase;
+    width: 100%;
+    white-space: nowrap;
+    margin-bottom: 40px;
+    -webkit-animation: marquee 50s linear infinite;
+    animation: marquee 50s linear infinite;
+  }
+
+  &__image {
+    position: absolute;
+    right: 10%;
+    max-width: 400px;
+    border-radius: var(--border-radius);
+
+    @media (max-width: 1050px) {
+      max-width: 250px;
+      right: 15%;
+    }
+
+    @media (max-width: 750px) {
+      max-width: 150px;
+      right: 25%;
+    }
+  }
+
+  &__wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+  }
+
+  &__list {
+    padding: 20px;
+    transform-origin: top center;
+  }
+
+  &__subtitle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: clamp(6.25rem, 5rem + 6.25vw, 12.5rem);
+    border-top: 1px solid var(--color-grey);
+  }
+
+  &__number {
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  &__card {
     overflow: hidden;
+  }
 
-    &__title {
-        position: relative;
-        transform: translateX(-50%);
-        text-align: center;
-        font-size: clamp(3.125rem, 0.75rem + 11.88vw, 15rem);
-        text-transform: uppercase;
-        width: 100%;
-        white-space: nowrap;
-        margin-bottom: 40px;
-        -webkit-animation: marquee 50s linear infinite;
-        animation: marquee 50s linear infinite;
+  &__item {
+    padding-block: 5px;
+    position: relative;
+    padding-left: 20px;
+
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: block;
+      border: 1px solid var(--color-light);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
     }
+  }
 
-    &__image {
-        position: absolute;
-        right: 10%;
-        max-width: 400px;
-        border-radius: var(--border-radius);
-
-        @media (max-width: 1050px) {
-            max-width: 250px;
-            right: 15%;
-        }
-
-        @media (max-width: 750px) {
-            max-width: 150px;
-            right: 25%;
-        }
-    }
-
-    &__wrapper {
-        max-width: 1200px;
-        margin-left: auto;
-        padding: 20px;
-    }
-
-    &__list {
-        padding: 20px;
-        transform-origin: top center;
-    }
-
-    &__subtitle {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        height: clamp(6.25rem, 5rem + 6.25vw, 12.5rem);
-        border-top: 1px solid var(--color-grey);
-    }
-
-    &__number {
-        font-size: 20px;
-        display: inline-block;
-        margin-right: 10px;
-    }
-
-    &__card {
-        overflow: hidden;
-    }
-
-    &__item {
-        padding-block: 5px;
-        position: relative;
-        padding-left: 20px;
-
-        &::before {
-            content: '';
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            display: block;
-            border: 1px solid var(--color-light);
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translate(0, -50%);
-        }
-    }
-
-    &__icon {
-        display: inline-block;
-        margin-left: auto;
-    }
-
+  &__icon {
+    display: inline-block;
+    margin-left: auto;
+  }
 }
 
 @-webkit-keyframes marquee {
-    0% {
-        transform: translateX(0%);
-    }
+  0% {
+    transform: translateX(0%);
+  }
 
-    50% {
-        transform: translateX(-50%);
-    }
+  50% {
+    transform: translateX(-50%);
+  }
 
-    50.5% {
-        transform: translateX(-50%);
-    }
+  50.5% {
+    transform: translateX(-50%);
+  }
 
-    100% {
-        transform: translateX(0%);
-    }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 @keyframes marquee {
-    0% {
-        transform: translateX(0%);
-    }
+  0% {
+    transform: translateX(0%);
+  }
 
-    50% {
-        transform: translateX(-50%);
-    }
+  50% {
+    transform: translateX(-50%);
+  }
 
-    50.5% {
-        transform: translateX(-50%);
-    }
+  50.5% {
+    transform: translateX(-50%);
+  }
 
-    100% {
-        transform: translateX(0%);
-    }
+  100% {
+    transform: translateX(0%);
+  }
 }
