@@ -1,69 +1,66 @@
-@import '../../styles/mixins';
+@import "../../styles/mixins";
 
 .footer {
+  &__content {
+    @include flex-between;
+    padding: 40px;
+    background-color: var(--color-grey);
+    border-radius: var(--border-radius);
+    margin-block: 20px;
+  }
 
-    &__content {
-        @include flex-between;
-        padding: 40px;
-        background-color: var(--color-grey);
-        border-radius: var(--border-radius);
-        margin-block: 20px;
+  &__list {
+    @include flex-center;
+    gap: 20px;
+  }
+
+  &__link {
+    transition: transform 0.3s linear;
+    display: inline-block;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__socials-list {
+    @include flex-center;
+    gap: 10px;
+  }
+
+  &__socials-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    @include square(40px);
+    position: relative;
+
+    &::before {
+      content: "";
+      @include square(100%);
+      display: inline-block;
+      border: 1px solid var(--color-light);
+      transition: transform 0.5s ease;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      border-radius: 50%;
     }
 
-    &__list {
-        @include flex-center;
-        gap: 20px;
+    &:hover {
+      &::before {
+        transform: translate(-50%, -50%) scale(1);
+      }
     }
-
-    &__link {
-        transition: transform 0.3s linear;
-        display: inline-block;
-
-        &:hover {
-            transform: scale(1.2);
-        }
-    }
-
-    &__socials-list {
-        @include flex-center;
-        gap: 10px;
-    }
-
-    &__socials-link {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        @include square(40px);
-        position: relative;
-
-        &::before {
-            content: '';
-            @include square(100%);
-            display: inline-block;
-            border: 1px solid var(--color-light);
-            transition: transform 0.5s ease;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%) scale(0);
-            border-radius: 50%;
-        }
-
-        &:hover {
-
-            &::before {
-                transform: translate(-50%, -50%) scale(1);
-            }
-        }
-    }
+  }
 }
 
 @media (max-width: 750px) {
-    .footer {
-
-        &__content {
-            flex-direction: column;
-            row-gap: 30px;
-        }
+  .footer {
+    &__content {
+      flex-direction: column;
+      row-gap: 20px;
     }
+  }
 }

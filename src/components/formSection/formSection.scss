@@ -1,67 +1,66 @@
-@import '../../styles/mixins';
+@import "../../styles/mixins";
 
 .form-section {
-    background-color: var(--color-dark);
-    padding-block: 80px;
+  background-color: var(--color-dark);
+  padding-block: var(--section-padding-block);
 
-    &__inner {
-        @include flex-center;
+  &__inner {
+    @include flex-center;
+  }
+
+  &__form {
+    @include flex-center;
+    flex-direction: column;
+    row-gap: 7px;
+    max-width: 760px;
+    width: 100%;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    border: none;
+    background-color: var(--color-grey);
+    color: var(--color-light);
+
+    &:focus {
+      outline: 3px solid var(--color-primary);
     }
+  }
 
-    &__form {
-        @include flex-center;
-        flex-direction: column;
-        row-gap: 7px;
-        max-width: 760px;
-        width: 100%;
+  &__textarea {
+    width: 100%;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    border: none;
+    background-color: var(--color-grey);
+
+    &:focus {
+      outline: 3px solid var(--color-primary);
     }
+  }
 
-    &__input {
-        width: 100%;
-        padding: 20px;
-        border-radius: var(--border-radius);
-        border: none;
-        background-color: var(--color-grey);
-        color: var(--color-light);
+  &__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    height: 63px;
+    min-width: 188px;
+    padding-inline: 30px;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-light);
+    border-radius: 50px;
+    font-family: var(--font-family-accent);
+    transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+    margin-top: 7px;
+    cursor: pointer;
 
-        &:focus {
-            outline: 3px solid var(--color-primary);
-        }
+    &:hover {
+      background-color: transparent;
+      border-color: var(--color-light);
     }
-
-    &__textarea {
-        width: 100%;
-        padding: 20px;
-        border-radius: var(--border-radius);
-        border: none;
-        background-color: var(--color-grey);
-
-        &:focus {
-            outline: 3px solid var(--color-primary);
-        }
-    }
-
-    &__button {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        text-transform: capitalize;
-        height: 63px;
-        min-width: 188px;
-        padding-inline: 30px;
-        background-color: var(--color-primary);
-        border: 1px solid var(--color-primary);
-        color: var(--color-light);
-        border-radius: 50px;
-        font-family: var(--font-family-accent);
-        transition: background-color 0.5s, border-color 0.5s, color 0.5s;
-        margin-top: 7px;
-        cursor: pointer;
-
-        &:hover {
-            background-color: transparent;
-            border-color: var(--color-light);
-        }
-
-    }
+  }
 }
