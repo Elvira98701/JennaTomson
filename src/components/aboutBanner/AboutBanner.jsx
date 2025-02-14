@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import HERO from "../../assets/images/hero.jpg";
+import HERO from "../../assets/images/hero.avif";
 import "./aboutBanner.scss";
 
 const AboutBanner = () => {
