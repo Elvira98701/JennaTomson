@@ -104,11 +104,13 @@ const Slider = () => {
         className="slider__prev"
         onClick={() => changeSlide(currentIndex - 1)}
         type="button"
+        title="prev slide"
       ></button>
       <button
         className="slider__next"
         onClick={() => changeSlide(currentIndex + 1)}
         type="button"
+        title="next slide"
       ></button>
     </div>
   );

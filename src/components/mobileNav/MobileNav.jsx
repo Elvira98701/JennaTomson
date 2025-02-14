@@ -34,6 +34,7 @@ const MobileNav = () => {
         className="mobile__open-btn"
         onClick={() => setIsOpenMenu(true)}
         type="button"
+        title="open menu"
       ></button>
       <AnimatePresence>
         {isOpenMenu && (
