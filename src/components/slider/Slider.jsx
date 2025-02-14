@@ -83,6 +83,8 @@ const Slider = () => {
                 transform: currentIndex === index ? "scale(1.1)" : "scale(1)",
               }}
               loading="lazy"
+              width={385}
+              height={572}
             />
             <AnimatePresence>
               {currentIndex === index && (

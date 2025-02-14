@@ -19,7 +19,14 @@ const Cta = () => {
         >
           Get in touch
         </motion.h2>
-        <img src={GIRL} alt="girl" className="cta__image" loading="lazy" />
+        <img
+          src={GIRL}
+          alt="girl"
+          className="cta__image"
+          loading="lazy"
+          width={400}
+          height={433}
+        />
         <ButtonLink link="/contact">Let&apos;s go</ButtonLink>
       </div>
     </section>

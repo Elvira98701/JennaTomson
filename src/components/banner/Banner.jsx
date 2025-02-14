@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Modal from "../modal/Modal";
 
-import HERO from "../../assets/images/hero.jpg";
+import HERO from "../../assets/images/hero.avif";
 import "./banner.scss";
 
 const Banner = () => {
@@ -20,8 +20,6 @@ const Banner = () => {
               src={HERO}
               alt="hero"
               fetchpriority="high"
-              width={450}
-              height={669}
               animate={{
                 rotateY: [0, 360, -360],
               }}
