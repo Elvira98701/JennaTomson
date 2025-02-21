@@ -50,8 +50,8 @@ const ContactHero = () => {
           }}
           animate={{
             y: 10,
-            x: -120,
-            rotate: -30,
+            x: -90,
+            rotate: 60,
             opacity: 1,
           }}
           transition={{
