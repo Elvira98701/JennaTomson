@@ -4,15 +4,15 @@
 
   &__image {
     max-width: 400px;
+    width: 100%;
+    height: auto;
     border-radius: var(--border-radius);
     margin-inline: auto;
     display: block;
     transform: translateY(-10%);
     z-index: -1;
     position: relative;
-
-    @media screen and (max-width: 576px) {
-      width: 100%;
-    }
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 }

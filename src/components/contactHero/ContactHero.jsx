@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import HERO from "../../assets/images/hero.avif";
-import GIRL2 from "../../assets/images/girl2.jpg";
+import GIRL2 from "../../assets/images/girl2.avif";
 import "./contactHero.scss";
 
 const ContactHero = () => {

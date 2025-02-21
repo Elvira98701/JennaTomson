@@ -1,7 +1,9 @@
 @import "../../styles/mixins";
 
 .slider {
-  height: 70vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -38,6 +40,8 @@
     -o-object-fit: cover;
     object-fit: cover;
     transition: all 0.3s ease;
+    width: 100%;
+    height: auto;
   }
 
   &__content {

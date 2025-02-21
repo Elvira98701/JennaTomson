@@ -1,24 +1,24 @@
-import work1 from "../assets/images/works/1.jpg";
-import work2 from "../assets/images/works/2.jpg";
-import work3 from "../assets/images/works/3.jpg";
-import work4 from "../assets/images/works/4.jpg";
-import work5 from "../assets/images/works/5.jpg";
-import work6 from "../assets/images/works/6.jpg";
+import work1 from "../assets/images/works/1.avif";
+import work2 from "../assets/images/works/2.avif";
+import work3 from "../assets/images/works/3.avif";
+import work4 from "../assets/images/works/4.avif";
+import work5 from "../assets/images/works/5.avif";
+import work6 from "../assets/images/works/6.avif";
 
 import telegram from "../assets/icons/telegram-logo-fill.svg";
 import instagram from "../assets/icons/instagram-logo-fill.svg";
 import dribbble from "../assets/icons/dribbble-logo-fill.svg";
 
-import feedback1 from "../assets/images/feedbacks/1.jpg";
-import feedback2 from "../assets/images/feedbacks/2.jpg";
-import feedback3 from "../assets/images/feedbacks/3.jpg";
-import feedback4 from "../assets/images/feedbacks/4.jpg";
-import feedback5 from "../assets/images/feedbacks/5.jpg";
-import feedback6 from "../assets/images/feedbacks/6.jpg";
-import feedback7 from "../assets/images/feedbacks/7.jpg";
-import feedback8 from "../assets/images/feedbacks/8.jpg";
-import feedback9 from "../assets/images/feedbacks/9.jpg";
-import feedback10 from "../assets/images/feedbacks/10.jpg";
+import feedback1 from "../assets/images/feedbacks/1.avif";
+import feedback2 from "../assets/images/feedbacks/2.avif";
+import feedback3 from "../assets/images/feedbacks/3.avif";
+import feedback4 from "../assets/images/feedbacks/4.avif";
+import feedback5 from "../assets/images/feedbacks/5.avif";
+import feedback6 from "../assets/images/feedbacks/6.avif";
+import feedback7 from "../assets/images/feedbacks/7.avif";
+import feedback8 from "../assets/images/feedbacks/8.avif";
+import feedback9 from "../assets/images/feedbacks/9.avif";
+import feedback10 from "../assets/images/feedbacks/10.avif";
 
 import LOGO1 from "../assets/icons/partners/app-store-logo.svg";
 import LOGO2 from "../assets/icons/partners/google-photos-logo.svg";
@@ -30,10 +30,10 @@ import LOGO7 from "../assets/icons/partners/sketch-logo.svg";
 import LOGO8 from "../assets/icons/partners/slack-logo.svg";
 import LOGO9 from "../assets/icons/partners/tidal-logo.svg";
 
-import service1 from "../assets/images/services/1.jpg";
-import service2 from "../assets/images/services/2.jpg";
-import service3 from "../assets/images/services/3.jpg";
-import service4 from "../assets/images/services/4.jpg";
+import service1 from "../assets/images/services/1.avif";
+import service2 from "../assets/images/services/2.avif";
+import service3 from "../assets/images/services/3.avif";
+import service4 from "../assets/images/services/4.avif";
 
 export const MENU = [
   {

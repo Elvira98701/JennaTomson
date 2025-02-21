@@ -19,6 +19,8 @@ const Banner = () => {
               className="banner__hero"
               src={HERO}
               alt="hero"
+              width={450}
+              height={669}
               fetchpriority="high"
               animate={{
                 rotateY: [0, 360, -360],

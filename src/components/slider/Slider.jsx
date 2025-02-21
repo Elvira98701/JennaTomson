@@ -80,7 +80,7 @@ const Slider = () => {
               alt={`Slide ${index}`}
               style={{
                 width: "100%",
-                transform: currentIndex === index ? "scale(1.1)" : "scale(1)",
+                transform: currentIndex === index ? "scale(1.05)" : "scale(1)",
               }}
               loading="lazy"
               width={385}

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import ButtonLink from "../buttonLink/ButtonLink";
 
-import GIRL from "../../assets/images/girl.jpg";
+import GIRL from "../../assets/images/girl.avif";
 import "./cta.scss";
 
 const Cta = () => {
