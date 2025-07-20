@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-import { PROJECTS } from "../../helpers/constants";
+
+import { PROJECTS } from "@/constants";
 
 import "./experience.scss";
 
-const Experience = () => {
+export const Experience = () => {
   const visible = {
     opacity: 1,
     y: 0,
@@ -46,5 +47,3 @@ const Experience = () => {
     </section>
   );
 };
-
-export default Experience;

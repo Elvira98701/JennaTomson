@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import Logo from "../logo/Logo";
-import { MENU, SOCIALS } from "../../helpers/constants";
+
+import { Logo } from "@/components";
+import { MENU, SOCIALS } from "@/constants";
 
 import "./footer.scss";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__inner container">
@@ -40,5 +41,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

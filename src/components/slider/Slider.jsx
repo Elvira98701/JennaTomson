@@ -1,28 +1,30 @@
 import { useEffect, useRef, useState } from "react";
+
 import { AnimatePresence, motion } from "framer-motion";
-import { FEEDBACKS } from "../../helpers/constants";
+
+import { FEEDBACKS } from "@/constants";
 
 import "./slider.scss";
 
-const Slider = () => {
+export const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slidesPerView, setSlidesPerView] = useState(1);
   const startX = useRef(0);
   const endX = useRef(0);
 
-  const updateSlidesPerView = () => {
-    if (window.innerWidth <= 600) {
-      setSlidesPerView(1);
-    } else if (window.innerWidth <= 950) {
-      setSlidesPerView(2);
-    } else if (window.innerWidth <= 1400) {
-      setSlidesPerView(3);
-    } else {
-      setSlidesPerView(4);
-    }
-  };
-
   useEffect(() => {
+    const updateSlidesPerView = () => {
+      if (window.innerWidth <= 600) {
+        setSlidesPerView(1);
+      } else if (window.innerWidth <= 950) {
+        setSlidesPerView(2);
+      } else if (window.innerWidth <= 1400) {
+        setSlidesPerView(3);
+      } else {
+        setSlidesPerView(4);
+      }
+    };
+
     updateSlidesPerView();
     window.addEventListener("resize", updateSlidesPerView);
     return () => {
@@ -117,5 +119,3 @@ const Slider = () => {
     </div>
   );
 };
-
-export default Slider;

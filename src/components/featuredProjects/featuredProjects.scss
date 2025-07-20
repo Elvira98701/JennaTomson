@@ -1,17 +1,17 @@
-@import '../../styles/mixins';
+@import "@/styles/mixins";
 
 .featured-projects {
-    padding-bottom: var(--section-padding-block);
+  padding-bottom: var(--section-padding-block);
 
-    &__title {
-        @include flex-center;
-        height: 60vh;
-        text-align: center
-    }
+  &__title {
+    @include flex-center;
+    height: 60vh;
+    text-align: center;
+  }
 
-    &__list {
-        @include flex-center;
-        flex-direction: column;
-        row-gap: clamp(1.875rem, 1.313rem + 2.81vw, 4.688rem);
-    }
+  &__list {
+    @include flex-center;
+    flex-direction: column;
+    row-gap: clamp(1.875rem, 1.313rem + 2.81vw, 4.688rem);
+  }
 }

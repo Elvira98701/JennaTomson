@@ -1,11 +1,10 @@
 .feedbacks {
-    padding-block: var(--section-padding-block);
+  padding-block: var(--section-padding-block);
 
-    &__divider {
-        width: 100%;
-        height: 1px;
-        background-color: var(--color-grey);
-        margin-block: 40px;
-    }
-  
+  &__divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-grey);
+    margin-block: 40px;
+  }
 }

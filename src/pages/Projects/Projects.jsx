@@ -1,8 +1,6 @@
-import Cta from "../../components/cta/Cta";
-import FeaturedProjects from "../../components/featuredProjects/FeaturedProjects";
-import PageTransition from "../../components/pageTransition/PageTransition";
+import { Cta, FeaturedProjects, PageTransition } from "@/components";
 
-const Projects = () => {
+export const Projects = () => {
   return (
     <main>
       <PageTransition />
@@ -11,5 +9,3 @@ const Projects = () => {
     </main>
   );
 };
-
-export default Projects;

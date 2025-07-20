@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 
-import HERO from "../../assets/images/hero.avif";
-import GIRL2 from "../../assets/images/girl2.avif";
+import GIRL2 from "@/assets/images/girl2.avif";
+import HERO from "@/assets/images/hero.avif";
+
 import "./contactHero.scss";
 
-const ContactHero = () => {
+export const ContactHero = () => {
   return (
     <section className="contact-hero">
       <div className="contact-hero__inner container">
@@ -77,5 +78,3 @@ const ContactHero = () => {
     </section>
   );
 };
-
-export default ContactHero;

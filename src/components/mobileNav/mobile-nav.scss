@@ -1,51 +1,49 @@
-@import '../../styles/mixins';
+@import "@/styles/mixins";
 
 .mobile {
-    width: 100%;
-    @include flex-between;
+  width: 100%;
+  @include flex-between;
 
-    &__open-btn {
-        color: var(--color-light);
-        @include square(50px);
-        border: 1px solid var(--color-grey);
-        border-radius: 50%;
-        cursor: pointer;
-        background: url('../../assets/icons/list.svg') center / 50% no-repeat;
-        transition: all 0.3s;
-    }
+  &__open-btn {
+    color: var(--color-light);
+    @include square(50px);
+    border: 1px solid var(--color-grey);
+    border-radius: 50%;
+    cursor: pointer;
+    background: url("@/assets/icons/list.svg") center / 50% no-repeat;
+    transition: all 0.3s;
+  }
 
-    &__close-btn {
-        color: var(--color-light);
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        @include square(50px);
-        border: 1px solid var(--color-grey);
-        border-radius: 50%;
-        transform: rotate(45deg);
-        cursor: pointer;
-        background: url('../../assets/icons/plus.svg') center / 50% no-repeat;
-        transition: all 0.3s;
-    }
+  &__close-btn {
+    color: var(--color-light);
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    @include square(50px);
+    border: 1px solid var(--color-grey);
+    border-radius: 50%;
+    transform: rotate(45deg);
+    cursor: pointer;
+    background: url("@/assets/icons/plus.svg") center / 50% no-repeat;
+    transition: all 0.3s;
+  }
 
-    &__nav {
-        position: fixed;
-        inset: 0;
-        background-color: var(--color-primary);
-        @include flex-center;
-    }
+  &__nav {
+    position: fixed;
+    inset: 0;
+    background-color: var(--color-primary);
+    @include flex-center;
+  }
 
-    &__list {
-        @include flex-center;
-        flex-direction: column;
-        row-gap: 30px;
-    }
+  &__list {
+    @include flex-center;
+    flex-direction: column;
+    row-gap: 30px;
+  }
 
-    &__link {
-        font-size: 35px;
-        font-family: var(--font-family-accent);
-        text-transform: uppercase;
-    }
-
-
+  &__link {
+    font-size: 35px;
+    font-family: var(--font-family-accent);
+    text-transform: uppercase;
+  }
 }

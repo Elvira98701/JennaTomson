@@ -1,21 +1,21 @@
 import { useEffect, useState } from "react";
-import Nav from "../nav/Nav";
-import MobileNav from "../mobileNav/MobileNav";
+
+import { MobileNav, Nav } from "@/components";
 
 import "./header.scss";
 
-const Header = () => {
+export const Header = () => {
   const [isMobileView, setIsMobileView] = useState(false);
 
-  const checkMobileView = () => {
-    if (window.innerWidth <= 750) {
-      setIsMobileView(true);
-    } else {
-      setIsMobileView(false);
-    }
-  };
-
   useEffect(() => {
+    const checkMobileView = () => {
+      if (window.innerWidth <= 750) {
+        setIsMobileView(true);
+      } else {
+        setIsMobileView(false);
+      }
+    };
+
     checkMobileView();
     window.addEventListener("resize", checkMobileView);
     return () => {
@@ -31,5 +31,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;

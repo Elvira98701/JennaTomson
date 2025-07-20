@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import "./pageTransition.scss";
 
-const PageTransition = () => (
+export const PageTransition = () => (
   <>
     <motion.div
       className="slide-in"
@@ -20,5 +20,3 @@ const PageTransition = () => (
     />
   </>
 );
-
-export default PageTransition;

@@ -1,8 +1,8 @@
-import { LOGOS } from "../../helpers/constants";
+import { LOGOS } from "@/constants";
 
 import "./partners.scss";
 
-const Partners = () => {
+export const Partners = () => {
   return (
     <section className="partners">
       <div className="partners__inner">
@@ -15,5 +15,3 @@ const Partners = () => {
     </section>
   );
 };
-
-export default Partners;

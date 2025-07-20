@@ -1,14 +1,12 @@
-@import '../../styles/mixins';
+@import "@/styles/mixins";
 
 .header {
-    position: absolute;
-    width: 100%;
-    z-index: 101;
+  position: absolute;
+  width: 100%;
+  z-index: 101;
 
-
-    &__inner {
-        height: var(--header-height);
-        @include flex-center;
-
-    }
+  &__inner {
+    height: var(--header-height);
+    @include flex-center;
+  }
 }

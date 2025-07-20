@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-import Slider from "../slider/Slider";
+
+import { Slider } from "@/components";
 
 import "./feedbacks.scss";
 
-const Feedbacks = () => {
+export const Feedbacks = () => {
   return (
     <section className="feedbacks">
       <div className="feedbacks__inner container">
@@ -22,5 +23,3 @@ const Feedbacks = () => {
     </section>
   );
 };
-
-export default Feedbacks;

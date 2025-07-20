@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import { PROJECTS } from "../../helpers/constants";
-import Work from "../work/Work";
+
+import { Work } from "@/components";
+import { PROJECTS } from "@/constants";
 
 import "./featuredProjects.scss";
 
-const FeaturedProjects = () => {
+export const FeaturedProjects = () => {
   return (
     <section className="featured-projects">
       <div className="featured-projects__inner container">
@@ -28,5 +29,3 @@ const FeaturedProjects = () => {
     </section>
   );
 };
-
-export default FeaturedProjects;

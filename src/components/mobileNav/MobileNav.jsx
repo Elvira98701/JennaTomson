@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
+
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { MENU } from "../../helpers/constants";
-import Logo from "../logo/Logo";
+
+import { Logo } from "@/components";
+import { MENU } from "@/constants";
 
 import "./mobile-nav.scss";
 
-const MobileNav = () => {
+export const MobileNav = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   useEffect(() => {
@@ -82,5 +84,3 @@ const MobileNav = () => {
     </div>
   );
 };
-
-export default MobileNav;

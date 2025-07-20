@@ -1,9 +1,10 @@
-import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+
+import { AnimatePresence, motion } from "framer-motion";
 
 import "./modal.scss";
 
-const Modal = () => {
+export const Modal = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
 
   useEffect(() => {
@@ -81,5 +82,3 @@ const ModalContent = ({ isOpenModal, setIsOpenModal }) => {
     </AnimatePresence>
   );
 };
-
-export default Modal;

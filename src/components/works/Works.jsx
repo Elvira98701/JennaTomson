@@ -1,10 +1,9 @@
-import { PROJECTS } from "../../helpers/constants";
-import ButtonLink from "../buttonLink/ButtonLink";
-import Work from "../work/Work";
+import { ButtonLink, Work } from "@/components";
+import { PROJECTS } from "@/constants";
 
 import "./works.scss";
 
-const Works = () => {
+export const Works = () => {
   return (
     <section className="works">
       <h2 className="workd__title visually-hidden">Works</h2>
@@ -21,5 +20,3 @@ const Works = () => {
     </section>
   );
 };
-
-export default Works;

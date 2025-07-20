@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
+
 import { animate, useInView } from "framer-motion";
 
-const MetricCounter = ({ from, to }) => {
+export const MetricCounter = ({ from, to }) => {
   const ref = useRef();
   const isInView = useInView(ref, { once: true });
 
@@ -19,5 +20,3 @@ const MetricCounter = ({ from, to }) => {
 
   return <span ref={ref} />;
 };
-
-export default MetricCounter;

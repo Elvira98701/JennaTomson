@@ -1,12 +1,14 @@
-import { Link } from "react-router-dom";
 import { Fragment } from "react";
+
 import { motion } from "framer-motion";
-import { MENU } from "../../helpers/constants";
-import Logo from "../logo/Logo";
+import { Link } from "react-router-dom";
+
+import { Logo } from "@/components";
+import { MENU } from "@/constants";
 
 import "./nav.scss";
 
-const Nav = () => {
+export const Nav = () => {
   const visible = {
     opacity: 1,
     y: 0,
@@ -51,5 +53,3 @@ const Nav = () => {
     </nav>
   );
 };
-
-export default Nav;

@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 
-import HERO from "../../assets/images/hero.avif";
+import HERO from "@/assets/images/hero.avif";
+
 import "./aboutBanner.scss";
 
-const AboutBanner = () => {
+export const AboutBanner = () => {
   return (
     <section className="about-banner">
       <div className="about-banner__inner container">
@@ -61,5 +62,3 @@ const AboutBanner = () => {
     </section>
   );
 };
-
-export default AboutBanner;

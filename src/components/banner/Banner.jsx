@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import Modal from "../modal/Modal";
 
-import HERO from "../../assets/images/hero.avif";
+import HERO from "@/assets/images/hero.avif";
+import { Modal } from "@/components";
+
 import "./banner.scss";
 
-const Banner = () => {
+export const Banner = () => {
   return (
     <section className="banner">
       <div className="banner__inner container">
@@ -70,5 +71,3 @@ const Banner = () => {
     </section>
   );
 };
-
-export default Banner;

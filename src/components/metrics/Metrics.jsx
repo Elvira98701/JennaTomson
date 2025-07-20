@@ -1,8 +1,8 @@
-import MetricCounter from "../metricCounter/MetricCounter";
+import { MetricCounter } from "@/components";
 
 import "./metrics.scss";
 
-const Metrics = () => {
+export const Metrics = () => {
   return (
     <section className="metrics">
       <div className="metrics__inner container">
@@ -37,5 +37,3 @@ const Metrics = () => {
     </section>
   );
 };
-
-export default Metrics;

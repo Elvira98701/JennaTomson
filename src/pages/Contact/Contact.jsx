@@ -1,8 +1,6 @@
-import ContactHero from "../../components/contactHero/ContactHero";
-import FormSection from "../../components/formSection/FormSection";
-import PageTransition from "../../components/pageTransition/PageTransition";
+import { ContactHero, FormSection, PageTransition } from "@/components";
 
-const Contact = () => {
+export const Contact = () => {
   return (
     <main>
       <PageTransition />
@@ -11,5 +9,3 @@ const Contact = () => {
     </main>
   );
 };
-
-export default Contact;

@@ -1,9 +1,6 @@
-import AppRoutes from "./components/appRoutes/AppRoutes";
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
-import ScrollToTop from "./helpers/scrollToTop";
-
-import "./styles/index.scss";
+import { AppRoutes, Footer, Header } from "@/components";
+import { ScrollToTop } from "@/utils";
+import "@/styles/index.scss";
 
 function App() {
   return (

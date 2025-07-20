@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { SERVICES } from "../../helpers/constants";
 
-import PLUS from "../../assets/icons/plus.svg";
+import { motion, AnimatePresence } from "framer-motion";
+
+import PLUS from "@/assets/icons/plus.svg";
+import { SERVICES } from "@/constants";
+
 import "./services.scss";
 
 const Accordion = ({ i, expanded, setExpanded, title, description, image }) => {
@@ -109,7 +111,7 @@ const Accordion = ({ i, expanded, setExpanded, title, description, image }) => {
   );
 };
 
-const Services = () => {
+export const Services = () => {
   const [expanded, setExpanded] = useState(null);
 
   return (
@@ -136,5 +138,3 @@ const Services = () => {
     </section>
   );
 };
-
-export default Services;

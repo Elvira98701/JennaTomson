@@ -1,59 +1,57 @@
-@import '../../styles/mixins';
+@import "@/styles/mixins";
 
 .about-banner {
+  &__inner {
+    @include flex-center;
+    position: relative;
+    height: 100vh;
+    text-align: center;
+  }
 
-    &__inner {
-        @include flex-center;
-        position: relative;
-        height: 100vh;
-        text-align: center;
+  &__image {
+    width: 150px;
+    height: 150px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    display: inline;
+
+    @media (max-width: 750px) {
+      width: 80px;
+      height: 80px;
     }
+  }
 
-    &__image {
-        width: 150px;
-        height: 150px;
-        -o-object-fit: cover;
-        object-fit: cover;
-        border-radius: var(--border-radius);
-        display: inline;
+  &__line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-grey);
+    z-index: -100;
+  }
 
-        @media (max-width: 750px) {
-            width: 80px;
-            height: 80px;
-        }
-    }
+  &__circle {
+    @include square(70vh);
+    border: 1px solid var(--color-grey);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -100;
+  }
 
-    &__line {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        height: 1px;
-        background-color: var(--color-grey);
-        z-index: -100;
-    }
+  &__description {
+    font-family: var(--font-family-accent);
+    font-size: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
+    max-width: 70%;
+    margin-inline: auto;
+    margin-top: 30px;
+  }
 
-    &__circle {
-        @include square(70vh);
-        border: 1px solid var(--color-grey);
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -100;
-    }
-
-    &__description {
-        font-family: var(--font-family-accent);
-        font-size: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
-        max-width: 70%;
-        margin-inline: auto;
-        margin-top: 30px;
-    }
-
-    &__color {
-        color: var(--color-primary);
-    }
-
+  &__color {
+    color: var(--color-primary);
+  }
 }

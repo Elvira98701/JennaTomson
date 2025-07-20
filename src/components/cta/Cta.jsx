@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import ButtonLink from "../buttonLink/ButtonLink";
 
-import GIRL from "../../assets/images/girl.avif";
+import GIRL from "@/assets/images/girl.avif";
+import { ButtonLink } from "@/components";
+
 import "./cta.scss";
 
-const Cta = () => {
+export const Cta = () => {
   return (
     <section className="cta">
       <div className="cta__inner container">
@@ -32,5 +33,3 @@ const Cta = () => {
     </section>
   );
 };
-
-export default Cta;

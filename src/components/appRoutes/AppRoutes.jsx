@@ -1,12 +1,9 @@
-import { Route, Routes } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import Home from "../../pages/Home/Home";
-import Projects from "../../pages/Projects/Projects";
-import About from "../../pages/About/About";
-import Contact from "../../pages/Contact/Contact";
-import Project from "../../pages/Project/Project";
+import { Route, Routes } from "react-router-dom";
 
-const AppRoutes = () => {
+import { Home, Projects, Project, About, Contact } from "@/pages";
+
+export const AppRoutes = () => {
   return (
     <AnimatePresence mode="wait">
       <Routes>
@@ -19,5 +16,3 @@ const AppRoutes = () => {
     </AnimatePresence>
   );
 };
-
-export default AppRoutes;

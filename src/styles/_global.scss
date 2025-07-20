@@ -1,30 +1,30 @@
-@import './mixins';
+@import "./mixins";
 
 html,
 body {
-    min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-primary) var(--color-dark);
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) transparent;
 }
 
 body {
-    font-family: var(--font-family-base);
-    color: var(--color-light);
-    background-color: var(--color-dark);
-    font-weight: 400;
-    line-height: 1.4;
-    font-size: 16px;
+  font-family: var(--font-family-base);
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 16px;
 }
 
 button {
-    @include reset-button;
+  @include reset-button;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 h1,
@@ -33,57 +33,56 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-family-accent);
-    line-height: 1;
-    font-weight: 400;
+  font-family: var(--font-family-accent);
+  line-height: 1;
+  font-weight: 400;
 }
 
 h1 {
-    text-transform: uppercase;
-    font-size: clamp(4.063rem, 2.375rem + 8.44vw, 12.5rem);
+  text-transform: uppercase;
+  font-size: clamp(4.063rem, 2.375rem + 8.44vw, 12.5rem);
 }
 
 h2 {
-    text-transform: uppercase;
-    font-size: clamp(3.125rem, 1.875rem + 6.25vw, 9.375rem);
+  text-transform: uppercase;
+  font-size: clamp(3.125rem, 1.875rem + 6.25vw, 9.375rem);
 }
 
 h3 {
-    font-size: clamp(1.563rem, 1.25rem + 1.56vw, 3.125rem);
+  font-size: clamp(1.563rem, 1.25rem + 1.56vw, 3.125rem);
 }
 
 .container {
-    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
-    margin-inline: auto;
-    padding-inline: var(--container-padding-x);
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
 }
 
-
 #root {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .App {
-    min-height: 100vh;
-    min-width: 100vw;
-    overflow-x: hidden;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
 }
 
 .visually-hidden {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    margin: -1px !important;
-    border: 0 !important;
-    padding: 0 !important;
-    white-space: nowrap !important;
-    -webkit-clip-path: inset(100%) !important;
-    clip-path: inset(100%) !important;
-    clip: rect(0 0 0 0) !important;
-    overflow: hidden !important;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  -webkit-clip-path: inset(100%) !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
 }
 
 .popup-opened {
-    overflow: hidden;
-    scrollbar-gutter: stable;
+  overflow: hidden;
+  scrollbar-gutter: stable;
 }

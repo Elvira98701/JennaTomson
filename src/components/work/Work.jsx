@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import "./work.scss";
 
@@ -20,7 +20,7 @@ const cardVariants = {
   },
 };
 
-const Work = ({
+export const Work = ({
   id,
   title,
   date,
@@ -59,5 +59,3 @@ const Work = ({
     </motion.article>
   );
 };
-
-export default Work;

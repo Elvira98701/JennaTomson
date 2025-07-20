@@ -1,12 +1,12 @@
-import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import PageTransition from "../../components/pageTransition/PageTransition";
-import Cta from "../../components/cta/Cta";
-import { PROJECTS } from "../../helpers/constants";
+import { useParams } from "react-router-dom";
+
+import { Cta, PageTransition } from "@/components";
+import { PROJECTS } from "@/constants";
 
 import "./project.scss";
 
-const Project = () => {
+export const Project = () => {
   const { id } = useParams();
   const project = PROJECTS.find((project) => project.id === Number(id));
 
@@ -51,5 +51,3 @@ const Project = () => {
     </main>
   );
 };
-
-export default Project;
