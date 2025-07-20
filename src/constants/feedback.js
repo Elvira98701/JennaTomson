@@ -1,13 +1,13 @@
-import feedback1 from "../assets/images/feedbacks/1.avif";
-import feedback10 from "../assets/images/feedbacks/10.avif";
-import feedback2 from "../assets/images/feedbacks/2.avif";
-import feedback3 from "../assets/images/feedbacks/3.avif";
-import feedback4 from "../assets/images/feedbacks/4.avif";
-import feedback5 from "../assets/images/feedbacks/5.avif";
-import feedback6 from "../assets/images/feedbacks/6.avif";
-import feedback7 from "../assets/images/feedbacks/7.avif";
-import feedback8 from "../assets/images/feedbacks/8.avif";
-import feedback9 from "../assets/images/feedbacks/9.avif";
+import feedback1 from "@/assets/images/feedbacks/1.avif";
+import feedback10 from "@/assets/images/feedbacks/10.avif";
+import feedback2 from "@/assets/images/feedbacks/2.avif";
+import feedback3 from "@/assets/images/feedbacks/3.avif";
+import feedback4 from "@/assets/images/feedbacks/4.avif";
+import feedback5 from "@/assets/images/feedbacks/5.avif";
+import feedback6 from "@/assets/images/feedbacks/6.avif";
+import feedback7 from "@/assets/images/feedbacks/7.avif";
+import feedback8 from "@/assets/images/feedbacks/8.avif";
+import feedback9 from "@/assets/images/feedbacks/9.avif";
 
 export const FEEDBACKS = [
   {
