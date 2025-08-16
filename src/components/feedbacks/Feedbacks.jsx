@@ -11,8 +11,8 @@ export const Feedbacks = () => {
         <h2 className="feedbacks__title">Feedbacks</h2>
         <motion.div
           className="feedbacks__divider"
-          initial={{ width: "0%" }}
-          whileInView={{ width: "100%" }}
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
           transition={{
             duration: 2,
             ease: "easeInOut",

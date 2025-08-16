@@ -46,10 +46,10 @@ export const AboutBanner = () => {
         <motion.div
           className="about-banner__line"
           initial={{
-            width: "0%",
+            scaleX: 0,
           }}
           whileInView={{
-            width: "100%",
+            scaleX: 1,
           }}
           transition={{
             duration: 2,

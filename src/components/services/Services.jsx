@@ -12,8 +12,10 @@ export const Services = () => {
   return (
     <section className="services">
       <h2 className="services__title">
-        Explore services &#10041; Explore services &#10041; Explore services
-        &#10041; Explore services
+        Explore services <span className="services__spinner">&#10041;</span>{" "}
+        Explore services <span className="services__spinner">&#10041;</span>{" "}
+        Explore services <span className="services__spinner">&#10041;</span>{" "}
+        Explore services
       </h2>
       <div className="services__inner container">
         <div className="services__wrapper">

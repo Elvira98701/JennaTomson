@@ -64,10 +64,10 @@ export const ContactHero = () => {
         <motion.div
           className="contact-hero__line"
           initial={{
-            width: "0%",
+            scaleX: 0,
           }}
           animate={{
-            width: "100%",
+            scaleX: 1,
           }}
           transition={{
             duration: 2,
