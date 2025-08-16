@@ -1,3 +1,4 @@
+import { Marquee } from "@/components";
 import { LOGOS } from "@/constants";
 
 import "./partners.scss";
@@ -5,13 +6,21 @@ import "./partners.scss";
 export const Partners = () => {
   return (
     <section className="partners">
-      <div className="partners__inner">
+      <Marquee>
         {LOGOS.map(({ id, image }) => (
           <div className="partners__logo-wrapper" key={id}>
             <img className="partners__logo" src={image} alt="logo" />
           </div>
         ))}
-      </div>
+      </Marquee>
+
+      <Marquee reverse>
+        {LOGOS.map(({ id, image }) => (
+          <div className="partners__logo-wrapper" key={id}>
+            <img className="partners__logo" src={image} alt="logo" />
+          </div>
+        ))}
+      </Marquee>
     </section>
   );
 };

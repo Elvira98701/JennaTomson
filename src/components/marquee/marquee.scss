@@ -1,0 +1,84 @@
+$duration: 40s;
+$gap: clamp(0.313rem, 1.56vw, 1.875rem);
+
+.marquee {
+  --duration: #{$duration};
+  --gap: #{$gap};
+
+  display: flex;
+  overflow: hidden;
+  padding: 1rem;
+  gap: var(--gap);
+}
+
+.marquee--horizontal {
+  flex-direction: row;
+}
+
+.marquee--vertical {
+  flex-direction: column;
+}
+
+.marquee__item {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-around;
+  gap: var(--gap);
+}
+
+.marquee__item--horizontal {
+  -webkit-animation: marquee-horizontal var(--duration) infinite linear;
+  animation: marquee-horizontal var(--duration) infinite linear;
+  flex-direction: row;
+}
+
+.marquee__item--vertical {
+  -webkit-animation: marquee-vertical var(--duration) infinite linear;
+  animation: marquee-vertical var(--duration) infinite linear;
+  flex-direction: column;
+}
+
+.marquee__item--paused {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.marquee__item--reverse {
+  animation-direction: reverse;
+}
+
+@-webkit-keyframes marquee-horizontal {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-horizontal {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@-webkit-keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}

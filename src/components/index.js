@@ -11,6 +11,7 @@ export { Footer } from "./footer";
 export { FormSection } from "./formSection";
 export { Header } from "./header";
 export { Logo } from "./logo";
+export { Marquee } from "./marquee";
 export { MetricCounter } from "./metricCounter";
 export { Metrics } from "./metrics";
 export { MobileNav } from "./mobileNav";
